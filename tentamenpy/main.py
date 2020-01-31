@@ -24,7 +24,6 @@ def runningMean(values, n=0):
                 v = np.concatenate([v, rvals], axis=1)
             else:
                 v = rvals
-
         # als er een matrix in wordt gedaan zal de functie de rijen middelen i.p.v. de kolommen
         return v
     else:
@@ -88,7 +87,7 @@ tred = (
 (l2,) = ax.plot(t, exponential(1.006, tred, -1), zorder=5)
 (l3,) = ax.plot(runningtime, runningconcentration, zorder=10, lw=2)
 l4 = ax.scatter(
-    runningtime[10::12], runningconcentration[10::12], marker="d", s=16, zorder=15
+    runningtime[10::12], , marker="d", s=16, zorder=15
 )
 
 ax.set_xlim(tijd[0], tijd[-1])
